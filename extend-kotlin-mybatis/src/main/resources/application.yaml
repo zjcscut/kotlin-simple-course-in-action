@@ -1,0 +1,13 @@
+server:
+  port: 9100
+spring:
+  application:
+    name: extend-kotlin-mybatis
+  datasource:
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/kotlin?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&useSSL=false&autoReconnect=true
+mybatis:
+  config-location: classpath:configuration/mybatis-configuration.xml
+  mapper-locations: classpath:mappings/*.xml
